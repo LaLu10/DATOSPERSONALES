@@ -11,7 +11,6 @@ class ResultActivity : AppCompatActivity() {
         binding= ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val datos=intent.extras
-        binding.textView.text= datos?.get("NOMBRE").toString()
-
+        binding.textView.text= datos?.get("NOMBRE").toString() + datos?.get("AÑO").toString()+datos?.get("GENERO").toString()+datos?.get("EMAIL").toString()+datos?.get("TELEFONO").toString()
     }
 }

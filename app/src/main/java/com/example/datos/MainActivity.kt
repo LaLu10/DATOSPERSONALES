@@ -16,8 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnSend.setOnClickListener { getAndSend() }
-        var mapa = mutableMapOf<String, String>()
-
+        var mapa = mutableListOf<String>()
     }
     fun getAndSend(){
         val intentResult = Intent(this,ResultActivity ::class.java)
@@ -25,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         intentResult.putExtra("AÑO", binding.etInfo.text.toString())
         intentResult.putExtra("GENERO", binding.etInfo.text.toString())
         intentResult.putExtra("EMAIL", binding.etInfo.text.toString())
+        intentResult.putExtra("TELEFONO", binding.etInfo.text.toString())
         startActivity(intentResult)
         var userSelect = ""
         val adaptador: ArrayAdapter<*> = ArrayAdapter.createFromResource(this, R.array.DATA,
