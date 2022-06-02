@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DATA">
+        <item>NAME</item>
+        <item>YEAR</item>
+        <item>PHONE</item>
+        <item>GENDER</item>
+        <item>EMAIL</item>
+        <item>CITY</item>
+    </string-array>
+</resources>
